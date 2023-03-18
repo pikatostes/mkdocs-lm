@@ -16,7 +16,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Welcome to MkDocs";
+    var mkdocs_page_name = "Bienvenido a mi p\u00e1gina creada con MKDocs para la asignatura Lenguaje de Marcas";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = null;
   </script>
@@ -46,11 +46,9 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Welcome to MkDocs</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Bienvenido a mi página creada con MKDocs para la asignatura Lenguaje de Marcas</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#proceso-de-creacion">Proceso de creación</a>
     </li>
     </ul>
                     </li>
@@ -88,7 +86,7 @@
     
       
     
-    <li>Welcome to MkDocs</li>
+    <li>Bienvenido a mi página creada con MKDocs para la asignatura Lenguaje de Marcas</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -99,21 +97,38 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="bienvenido-a-mi-pagina-creada-con-mkdocs-para-la-asignatura-lenguaje-de-marcas">Bienvenido a mi página creada con MKDocs para la asignatura Lenguaje de Marcas</h1>
+<h2 id="proceso-de-creacion">Proceso de creación</h2>
+<p>MKDocs es una herramienta de código abierto que nos permite crear documentación en formato HTML a partir de archivos Markdown. En este texto, explicaremos cómo crear una página web utilizando MKDocs, desde la instalación hasta la generación del sitio.</p>
+<p>Para comenzar, es necesario instalar MKDocs. Esto se puede hacer utilizando el gestor de paquetes pip de Python:</p>
+<pre><code class="language-bash">pip install mkdocs
 </code></pre>
+<p>Una vez instalado, podemos crear un nuevo proyecto con el comando <code>mkdocs new</code>:</p>
+<pre><code class="language-bash">mkdocs new my-site
+cd my-site
+</code></pre>
+<p>Esto creará una estructura de archivos básica para nuestro sitio. El archivo <code>mkdocs.yml</code> es el archivo de configuración principal, donde se pueden especificar detalles como el título del sitio, la lista de páginas, etc. Además, en la carpeta <code>docs</code> es donde colocaremos todos los archivos Markdown que conformarán la documentación de nuestro sitio.</p>
+<p>Podemos crear una página nueva simplemente creando un archivo Markdown en la carpeta <code>docs</code>. Por ejemplo, podríamos crear una página llamada <code>index.md</code> que contenga el siguiente contenido:</p>
+<pre><code class="language-markdown"># Bienvenidos a mi sitio
+
+Este es mi primer sitio web creado con MKDocs.
+</code></pre>
+<p>Una vez que hayamos creado nuestras páginas, podemos generar el sitio HTML utilizando el comando <code>mkdocs build</code>:</p>
+<pre><code class="language-bash">mkdocs build
+</code></pre>
+<p>Esto generará una carpeta <code>site</code> que contiene todo el sitio web HTML. Podemos abrir el archivo <code>index.html</code> en nuestro navegador para ver el sitio.</p>
+<p>También podemos servir el sitio localmente con el comando <code>mkdocs serve</code>:</p>
+<pre><code class="language-bash">mkdocs serve
+</code></pre>
+<p>Esto iniciará un servidor web local en <code>http://localhost:8000</code> donde podemos ver nuestro sitio en tiempo real mientras trabajamos en él.</p>
+<p>Además, MKDocs ofrece una serie de temas y complementos que podemos utilizar para personalizar nuestro sitio. Estos se pueden especificar en el archivo de configuración <code>mkdocs.yml</code>. Por ejemplo, si queremos utilizar el tema <code>material</code> y el complemento <code>search</code>, podemos agregar las siguientes líneas a <code>mkdocs.yml</code>:</p>
+<pre><code class="language-yaml">theme:
+    name: material
+
+plugins:
+    - search
+</code></pre>
+<p>Con esto, podemos crear un sitio web completo de documentación utilizando MKDocs, aprovechando todas las herramientas y funcionalidades que nos ofrece.</p>
               
             </div>
           </div>
@@ -167,5 +182,5 @@ docs/
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2023-03-18 12:03:08.272380+00:00
+Build Date UTC : 2023-03-18 12:32:57.189363+00:00
 -->
